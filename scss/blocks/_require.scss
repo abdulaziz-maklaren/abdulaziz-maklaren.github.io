@@ -1,0 +1,82 @@
+.require {
+  padding: 75px 0;
+  &__btn {
+    margin-bottom: 27px;
+  }
+  &__title {
+    margin-bottom: 33px;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    color: $main-color;
+  }
+  &__subtitle-red {
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    color: #ff5656;
+  }
+  &__text {
+    color: $main-color;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__box {
+    width: 476px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  &__mb60 {
+    margin-bottom: 60px;
+  }
+  &__item {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 21px;
+      height: 20px;
+      background-image: url("../../image/Galojca.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__item2 {
+      display: flex;
+      gap: 10px;
+      margin-left: 20px;
+      &::before {
+        content: "";
+        display: block;
+        width: 21px;
+        height: 20px;
+        background-image: url("../../image/Layer\ 31\ copy\ 7.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .require {
+    &__item-red {
+      margin-bottom: 30px;
+    }
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}
